@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+
+<body>
+  <div>
+    <h1>じゃんけん</h1>
+    <h2>あなたの手を選択してください</h2>
+    <table>
+        <tr>
+            <td><img src="img/gu.png" onclick="janken(0)"></td>
+            <td><img src="img/choki.png" onclick="janken(1)"></td>
+            <td><img src="img/pa.png" onclick="janken(2)"></td>
+        </tr>
+    </table>
+    <hr>
+    <table>
+        <tr>
+            <th><h2>あなたの手</h2></th>
+            <th><h2>コンピュータの手</h2></th>
+        </tr>
+        <tr>
+            <td><img src="" id="userImg"></td>
+            <td><img src="" id="pcImg"></td>
+        </tr>
+        <tr>
+            <td colspan="2" id="res">
+              <h1>  <p id="result1"></p></h1>
+            </td>
+        </tr>
+    </table>
+</div>  
+
+<div>
+    <div class="rand_area">
+        <div class="rand_name"></div>
+        <button type="button" class="stop">おみくじ!</button>
+        <button type="button" class="restart" style="display: none;">もう一度</button>
+    </div>
+  
+</div>
+
+
+
+<div>
+    <!-- 画像検索 -->
+    <form name="search">
+        <input name="key" type="text" value="パン"  placeholder="文字を入力してください">
+        <input name="btn" type="submit" value="ボタン">
+      </form>
+  
+      <div id="result"></div>
+
+
+
+
+ <script src="js/1.js"></script>
+<!-- <script src="js/janken.js"></script> -->
+ <!-- <script src="js/app.js"></script> -->
+<!-- ここまで画像検索 -->
+</div>
+</body>
+</html>
